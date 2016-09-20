@@ -1,0 +1,11 @@
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project (':fx-db')
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.+';
+    compile group: 'junit', name: 'junit', version: '4.+';
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.3';
+}

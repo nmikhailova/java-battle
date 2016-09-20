@@ -1,0 +1,1 @@
+The string tokenizer class allows an application to break a string into tokens.

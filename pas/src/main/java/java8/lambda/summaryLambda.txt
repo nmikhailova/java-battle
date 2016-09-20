@@ -1,0 +1,15 @@
+лямбда: Runnable r = () -> System.out.println("thread run");
+лямбда с параметрами:
+    UnaryOperator<String> u = name -> "hello, user " + name;
+    BinaryOperator<String> b = (name, n) -> "hello, user " + name + ". your number is " + n;
+ссылки на методы: Predicate<String> emptyCheck = String::isEmpty;
+кастомный функциональный интерфейс -> любой с одним не дефолтным методом
+дефолтные методы в интерфейсах
+полезные предопределённые функциональные интерфейсы:
+    Optional        избавляет он not-null проверок
+    UnaryOperator   унарные операторы
+    BinaryOperator  бинарные операторы
+    Supplier        поставщик объектов
+    Consumer        потребитель
+    Function        функция t=f(t)
+    Predicate       проверка условий

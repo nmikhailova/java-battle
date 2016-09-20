@@ -1,0 +1,16 @@
+rootProject.name = 'java-battle'
+
+include 'fx-domain'
+include 'fx-db'
+include 'fx-service'
+include 'fx-ui-shared'
+include 'fx-ui-console'
+include 'fx-ui-web'
+include 'fx-ui-mobile'
+include 'fx-ui-applet'
+
+include 'gadd'
+include 'lea'
+include 'nastia'
+include 'ola'
+include 'pas'

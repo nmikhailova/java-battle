@@ -1,0 +1,18 @@
+List<Integer> numbers
+numbers.stream()... в потоке
+numbers.parallelStream()... в потоках
+numbers.stream().map(i -> "n" + i)... конвертация в др.тип
+numbers.stream()....collect(Collectors.toList()) собрать результат в др. коллекцию
+numbers.stream()....findFirst() найти первый элемент
+numbers.stream()....findAny() найти любой элемент
+numbers.stream().filter(i -> i > 20).... фильтр
+numbers.stream()....peek(peek(System.::println))... промежуточное (доп.) действие, например перед конфертацией
+numbers.stream().allMatch(i -> i >= 0) проверка на совпадение
+numbers.stream().anyMatch(i -> i > 25) проверка на совпадение
+numbers.stream().noneMatch(i -> i > 25) проверка на совпадение
+numbers.stream().sorted()... сортировка (не работает в параллельном стриме)
+numbers.stream().skip(20)... пропустить несколько первых элементов
+numbers.stream().distinct()... убрать дубликаты
+numbers.stream().min(Integer::compare) мин
+numbers.stream().max(Integer::compare) макс
+Integer sum = numbers.stream().reduce(0, (a, b) -> a + b); подсчёт результата по коллекции (reduce)
